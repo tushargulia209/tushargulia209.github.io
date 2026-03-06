@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect Property | Premium Real Estate</title>
+    <meta name="description"
+        content="Enquire instantly about Residential, Commercial, and Industrial properties via WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3.0">
+</head>
+
+<body>
+    <header class="header" style="position: relative !important; align-self: flex-start;">
+        <div class="container header-container">
+            <div class="logo-group">
+                <a href="#" class="logo">
+                    <img src="Images/Logo.png" alt="Nirankari Estates Logo" class="logo-img">
+                    <span class="logo-divider">|</span>
+                    <img src="Images/MET%20City.png" alt="MET City Logo" class="logo-img met-logo">
+                    <span class="logo-text">Nirankari Estates</span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="#about" class="nav-link" onclick="closeMenu()">About Us</a>
+                <a href="#amenities" class="nav-link" onclick="closeMenu()">Amenities</a>
+                <a href="#enquiry" class="nav-link" onclick="closeMenu()">Opportunities</a>
+                <a href="#contact" class="nav-link" onclick="closeMenu()">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero"
+            style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('Images/Home.png');">
+            <div class="hero-content container">
+                <h1>Find Your Perfect Property</h1>
+                <p>Select a property type below to instantly connect with us.</p>
+            </div>
+        </section>
+
+        <!-- About MET City Section -->
+        <section id="about-met" class="about-section container">
+            <h2 class="section-title">About MET City</h2>
+            <div class="about-content">
+                <p>
+                    Reliance MET City is a massive, 8,250-acre integrated industrial township in Jhajjar, Haryana,
+                    designed as a world-class ecosystem for global industries and modern communities.
+                    Strategically located near the Delhi-NCR region, it offers exceptional connectivity via the KMP
+                    Expressway and major road networks linking it to Gurgaon and Bahadurgarh.
+                    This ambitious project is rapidly becoming a premier economic hub, attracting significant national
+                    and international investment across manufacturing, logistics, and automotive sectors.
+                    The resulting industrial boom is driving a surge in local employment, which in turn fuels a high
+                    demand for residential housing, rental properties, and commercial spaces in the surrounding areas.
+                    As infrastructure continues to expand and land values appreciate, the region has become a top
+                    priority for real-time real estate investors looking to capitalize on long-term urban growth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Enquiry Section -->
+        <section id="enquiry" class="enquiry-section container">
+            <h2 class="section-title" style="display: none;">Enquiry Opportunities</h2>
+            <div class="enquiry-wrapper">
+                <!-- Residential Card -->
+                <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20enquiring%20about%20Residential%20properties.%20Could%20you%20please%20share%20more%20details%3F"
+                    class="enquiry-card" target="_blank" rel="noopener noreferrer">
+                    <div class="enquiry-image-container">
+                        <img src="Images/Residential.png" alt="Residential Properties" loading="lazy">
+                    </div>
+                    <div class="enquiry-content">
+                        <h3>Residential Properties</h3>
+                        <div class="enquiry-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                            <span>Tap to Enquire</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Commercial Card -->
+                <a href="https://wa.me/917206064444?text=Hi!%20I%20would%20like%20to%20know%20more%20about%20your%20available%20Commercial%20properties."
+                    class="enquiry-card" target="_blank" rel="noopener noreferrer">
+                    <div class="enquiry-image-container">
+                        <img src="Images/Commercial.png" alt="Commercial Spaces" loading="lazy">
+                    </div>
+                    <div class="enquiry-content">
+                        <h3>Commercial Spaces</h3>
+                        <div class="enquiry-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                            <span>Tap to Enquire</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Industrial Card -->
+                <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20looking%20for%20information%20regarding%20Industrial%20properties%20and%20sites."
+                    class="enquiry-card" target="_blank" rel="noopener noreferrer">
+                    <div class="enquiry-image-container">
+                        <img src="Images/Industrial.png" alt="Industrial Sites" loading="lazy">
+                    </div>
+                    <div class="enquiry-content">
+                        <h3>Industrial Sites</h3>
+                        <div class="enquiry-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                            <span>Tap to Enquire</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- MET Habitat Card -->
+                <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20looking%20for%20information%20regarding%20MET%20Habitat%20properties%20and%20sites."
+                    class="enquiry-card" target="_blank" rel="noopener noreferrer">
+                    <div class="enquiry-image-container">
+                        <img src="Images/MET Habitat.jpeg" alt="MET Habitat" loading="lazy">
+                    </div>
+                    <div class="enquiry-content">
+                        <h3>MET Habitat</h3>
+                        <div class="enquiry-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                            <span>Tap to Enquire</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Independent Floors Card - Coming Soon -->
+                <div class="enquiry-card coming-soon-card">
+                    <!-- <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20Independent%20Floors." class="enquiry-card" target="_blank" rel="noopener noreferrer"> -->
+                    <div class="enquiry-image-container">
+                        <img src="Images/Residential.png" alt="Independent Floors" loading="lazy">
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="enquiry-content">
+                        <h3>Independent Floors</h3>
+                        <div class="enquiry-btn coming-soon-btn">
+                            <span>Coming Soon</span>
+                        </div>
+                    </div>
+                    <!-- </a>     -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="amenities-section container">
+            <h2 class="section-title">Met Amenities</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <span class="amenity-icon">🏥</span>
+                    <span class="amenity-text">Healthcare</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🎓</span>
+                    <span class="amenity-text">Schools</span>
+                </div>
+                <div class="amenity-item">
+                    <img src="Images/SGT.png" alt="SGT University" class="amenity-custom-icon">
+                    <span class="amenity-text">SGT University</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🏟️</span>
+                    <span class="amenity-text">BCCI International Stadium</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">⛩️</span>
+                    <span class="amenity-text">Religious buildings</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🏢</span>
+                    <span class="amenity-text">Club Met City</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🤝</span>
+                    <span class="amenity-text">Dedicated Estate Management Team</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🛣️</span>
+                    <span class="amenity-text">Easy connectivity to Western Peripheral</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Opportunities Section -->
+        <section id="opportunities" class="projects-section container">
+            <h2 class="section-title">Investment Opportunities</h2>
+            <div class="projects-grid">
+                <!-- Residential Plots -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="Images/Residential.png" alt="Residential Plots" class="project-image" loading="lazy">
+                        <!-- <div class="badge new-launch">NEW LAUNCH</div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Residential Plots</h3>
+                        <!-- <p class="project-location">Pocket - L, J&K, C&D, E Sector-8<br>Pocket - A&B, Sector-2A</p> -->
+                        <ul class="project-features">
+                            <li><span class="feature-icon">→</span> Concept city - Walk to Work.</li>
+                            <li><span class="feature-icon">→</span> Planned as self contained City.</li>
+                            <li><span class="feature-icon">→</span> Group Housing as well as Plotted development.</li>
+                            <li><span class="feature-icon">→</span> Plot Sizes start from 75 sq. yds.</li>
+                        </ul>
+                        <!-- <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20enquiring%20about%20Residential%20Plots."
+                            class="project-btn" target="_blank" rel="noopener noreferrer">
+                            Request Details
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Industrial Plots -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="Images/Industrial.png" alt="Industrial Plots" class="project-image" loading="lazy">
+                        <!-- <div class="badge new-launch">NEW LAUNCH</div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Industrial Plots</h3>
+                        <!-- <p class="project-location">SECTOR - 2B, 3, 4, 5, 7A&7B, 10A<br>SECTOR-11 NEW LAUNCH</p> -->
+                        <ul class="project-features">
+                            <li><span class="feature-icon">→</span> North India's First Gold Rated Industrial Township.
+                            </li>
+                            <li><span class="feature-icon">→</span> Developed under HEEP 2020.</li>
+                            <li><span class="feature-icon">→</span> Plot Sizes start from 1000 sq. mts.</li>
+                            <li><span class="feature-icon">→</span> World Class Infrastructure.</li>
+                        </ul>
+                        <!-- <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20enquiring%20about%20Industrial%20Plots."
+                            class="project-btn" target="_blank" rel="noopener noreferrer">
+                            Request Details
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Commercial SCO Plots -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="Images/Commercial.png" alt="Commercial SCO Plots" class="project-image"
+                            loading="lazy">
+                        <!-- <div class="badge resale">AVAILABLE IN RESALE</div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>Commercial SCO Plots</h3>
+                        <!-- <p class="project-location">HIGHWAY MART<br>SUPER MART</p> -->
+                        <ul class="project-features">
+                            <li><span class="feature-icon">→</span> Premium commercial plots within licensed industrial
+                                colony of MET.</li>
+                            <li><span class="feature-icon">→</span> Residential Retail Markets and Industrial /
+                                Commercial Wholesale Markets.</li>
+                            <li><span class="feature-icon">→</span> Plot Sizes start from 75 sq. yds.</li>
+                        </ul>
+                        <!-- <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20enquiring%20about%20Commercial%20SCO%20Plots."
+                            class="project-btn" target="_blank" rel="noopener noreferrer">
+                            Request Details
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <!-- MET Habitat -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="Images/MET Habitat.jpeg" alt="MET Habitat" class="project-image" loading="lazy">
+                        <!-- <div class="badge resale">AVAILABLE IN RESALE</div> -->
+                    </div>
+                    <div class="project-content">
+                        <h3>MET Habitat</h3>
+                        <!-- <p class="project-location">HIGHWAY MART<br>SUPER MART</p> -->
+                        <ul class="project-features">
+                            <li><span class="feature-icon">→</span> Premium Villa Plots in licensed industrial colony of
+                                MET</li>
+                            <li><span class="feature-icon">→</span> IGBC Gold-rated green township</li>
+                            <li><span class="feature-icon">→</span> Smart infrastructure and sustainable planning</li>
+                            <li><span class="feature-icon">→</span> Options for every lifestyle and income group</li>
+                        </ul>
+                        <!-- <a href="https://wa.me/917206064444?text=Hi!%20I%20am%20interested%20in%20enquiring%20about%20Commercial%20SCO%20Plots."
+                            class="project-btn" target="_blank" rel="noopener noreferrer">
+                            Request Details
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16"
+                                fill="currentColor">
+                                <path
+                                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <!-- Independent Floors - Coming Soon -->
+                <div class="project-card coming-soon-card">
+                    <div class="project-image-wrapper">
+                        <img src="Images/Residential.png" alt="Independent Floors" class="project-image" loading="lazy">
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-badge">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Independent Floors</h3>
+                        <ul class="project-features">
+                            <li><span class="feature-icon">→</span> Premium independent floor living.</li>
+                            <li><span class="feature-icon">→</span> Modern design with spacious layouts.</li>
+                            <li><span class="feature-icon">→</span> Exclusive community within MET City.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section container">
+            <div class="location-container">
+                <div class="location-details">
+                    <h3>SITE OFFICE:</h3>
+                    <p>
+                        Nirankari estates, Opposite Reliance <br>
+                        Metropolis, Dhansa Border, Badli, <br>
+                        Jhajjar, Haryana, 124105
+                    </p>
+                    <a href="https://maps.app.goo.gl/ja6VCgQ7JPS11eMy5?g_st=aw" target="_blank"
+                        rel="noopener noreferrer" class="map-link-btn">
+                        <span class="map-icon">📍</span> Open in Google Maps
+                    </a>
+                </div>
+                <div class="location-map">
+                    <!-- Embedded Google Map targeting the provided coordinate URL location implicitly -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14022.692341951914!2d76.9945934!3d28.5194917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1991d30560b3%3A0xe5469cd87c2fb8b0!2sPalam%20Vihar%20Sector%203%2C%20Gurugram%2C%20Haryana%20122017!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us-section container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>
+                    Nirankari Estates is a trusted real estate consultancy specializing in property opportunities and
+                    residential plots near the booming Reliance MET City in Jhajjar. They provide expert advisory and
+                    end-to-end support, handling everything from site visits to complex documentation to ensure a
+                    hassle-free experience.
+                </p>
+                <p>
+                    By focusing on Haryana’s fastest-growing industrial corridors, the firm helps investors and families
+                    secure land with high future growth potential. Their mission centers on transparency and
+                    reliability, making them a dedicated partner for anyone looking to navigate the local market with
+                    confidence.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Contact Section -->
+        <section id="contact" class="contact-links-section container">
+            <h2 class="section-title" style="margin-bottom: 32px;">Connect With Us</h2>
+            <div class="contact-links-grid">
+                <a href="https://wa.me/917206064444?text=Hi%20Nirankari%20Estates!%20I%20want%20to%20make%20an%20enquiry."
+                    class="contact-link-item whatsapp" target="_blank" rel="noopener noreferrer">
+                    <img src="Images/WhatsApp.png" alt="WhatsApp Icon" class="contact-custom-icon">
+                    <span class="contact-label">WhatsApp Us</span>
+                    <span class="contact-detail">7206064444</span>
+                </a>
+
+                <a href="tel:+917206064444" class="contact-link-item phone">
+                    <span class="contact-icon">📞</span>
+                    <span class="contact-label">Call Us</span>
+                    <span class="contact-detail">+91 7206064444</span>
+                </a>
+
+                <a href="mailto:nirankariestates@gmail.com" class="contact-link-item email">
+                    <span class="contact-icon">✉️</span>
+                    <span class="contact-label">Email Us</span>
+                    <span class="contact-detail">nirankariestates@gmail.com</span>
+                </a>
+
+                <a href="https://www.instagram.com/nirankariestates?igsh=azBhN203Z3NrNTN6"
+                    class="contact-link-item instagram" target="_blank" rel="noopener noreferrer">
+                    <img src="Images/Insta.jpg" alt="Instagram Icon" class="contact-custom-icon insta-icon">
+                    <span class="contact-label">Follow Us</span>
+                    <span class="contact-detail">@nirankariestates</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-agent">
+                    <p class="footer-agent-title">Authorised Sales Associate</p>
+                    <p class="footer-agent-name">TUSHAR GULIA</p>
+                    <p class="footer-agent-rera">RERA – GGM/3728/3323/2025/605</p>
+                </div>
+                <div class="footer-disclaimer">
+                    <h4>DISCLAIMER</h4>
+                    <p>This website is for information and reference purpose only. For latest information, latest launch
+                        and booking, kindly contact our team.</p>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 Nirankari Estates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917206064444?text=Hi%20Nirankari%20Estates!%20I%20want%20to%20make%20an%20enquiry."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="white">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157.1zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <!-- Go To Top Button -->
+    <button id="go-top-btn" class="go-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        aria-label="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+</body>
+
+<style>
+    body {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+
+    #copy-warning-toast {
+        display: none;
+        position: fixed;
+        bottom: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #1e293b;
+        color: white;
+        padding: 14px 28px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        z-index: 9999;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        animation: fadeInUp 0.3s ease;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateX(-50%) translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+</style>
+
+<div id="copy-warning-toast">⚠️ Copying content is not permitted on this website.</div>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.toggle('active');
+    }
+
+    function closeMenu() {
+        const nav = document.getElementById('mainNav');
+        nav.classList.remove('active');
+    }
+
+    document.addEventListener('copy', function (e) {
+        e.preventDefault();
+        showCopyWarning();
+    });
+
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        showCopyWarning();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        // Block Ctrl+C, Ctrl+U (view source), Ctrl+S, Ctrl+A
+        if (e.ctrlKey && ['c', 'u', 's', 'a'].includes(e.key.toLowerCase())) {
+            e.preventDefault();
+            if (e.key.toLowerCase() === 'c' || e.key.toLowerCase() === 'a') {
+                showCopyWarning();
+            }
+        }
+    });
+
+    function showCopyWarning() {
+        const toast = document.getElementById('copy-warning-toast');
+        toast.style.display = 'block';
+        clearTimeout(window._copyWarnTimer);
+        window._copyWarnTimer = setTimeout(() => {
+            toast.style.display = 'none';
+        }, 3000);
+    }
+
+    // Go to top button visibility
+    const goTopBtn = document.getElementById('go-top-btn');
+    window.addEventListener('scroll', () => {
+        goTopBtn.classList.toggle('visible', window.scrollY > 300);
+    });
+</script>
+
+</html>
