@@ -217,27 +217,26 @@ body {
 
 /* Enquiry Section */
 .enquiry-section {
-    position: relative;
-    z-index: 10;
-    margin-bottom: 80px;
-    text-align: center;
     width: 100%;
-    padding: 0 16px;
+    padding: 40px 24px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .enquiry-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: center;
-    gap: 32px;
+    align-items: stretch;
+    gap: 24px;
     width: 100%;
-    margin-left: 161px;
+    box-sizing: border-box;
 }
 
 .enquiry-card {
-    flex: 1 1 260px;
-    max-width: 320px;
+    flex: 1 1 200px;
+    min-width: 0;          /* ← critical, allows cards to shrink below 260px */
+    max-width: 280px;
     background: var(--bg-card);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
@@ -247,7 +246,6 @@ body {
     display: flex;
     flex-direction: column;
     transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
-    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .enquiry-card:hover {
