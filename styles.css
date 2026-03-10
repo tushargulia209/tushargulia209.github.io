@@ -235,7 +235,8 @@ body {
 
 .enquiry-card {
     flex: 1 1 200px;
-    min-width: 0;          /* ← critical, allows cards to shrink below 260px */
+    min-width: 0;
+    /* ← critical, allows cards to shrink below 260px */
     max-width: 280px;
     background: var(--bg-card);
     border-radius: var(--radius-lg);
@@ -601,18 +602,24 @@ body {
     /* Professional blue matching the reference image */
     border-radius: var(--radius-lg);
     display: flex;
+    align-items: stretch;
     overflow: hidden;
     box-shadow: var(--shadow-md);
     min-height: 350px;
 }
 
 .location-details {
-    flex: 0 0 40%;
-    padding: 48px 40px;
+    flex: 0 0 25%;
+    padding: 48px 32px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.location-details-right {
+    text-align: left;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .location-details h3 {
@@ -652,8 +659,9 @@ body {
 }
 
 .location-map {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
     min-height: 350px;
+    align-self: stretch;
 }
 
 /* Quick Contact Section */
@@ -1036,10 +1044,19 @@ body {
 
     .location-details {
         padding: 32px 24px;
+        flex: none;
+        width: 100%;
+    }
+
+    .location-details-right {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 
     .location-map {
         min-height: 250px;
+        flex: none;
+        width: 100%;
     }
 
     .footer-row {
